@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.form-container {
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box; /* Ajouté pour inclure le padding dans la largeur totale */
+}
+
+button {
+    padding: 10px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+/* Media Queries pour rendre le design responsive */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    input {
+        padding: 9px;
+        font-size: 15px;
+    }
+
+    button {
+        padding: 9px;
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
