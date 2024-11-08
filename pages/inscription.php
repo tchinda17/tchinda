@@ -1,6 +1,9 @@
 <?php
 require_once '../config/config.php';
 
+
+
+// verification de methode d'envoie des infos et de recupperer les differents champ du formulaire 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $nom = $_POST['nom'];
     $email = $_POST['email'];
@@ -16,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     if ($resultat > 0) {
         $erreur = " le mail est deja utilise ";
     } else {
-        // verification du mot de passe et insertion des informations dans la db 
+ // verification du mot de passe et insertion des informations dans la db 
         if ($motdepasse == $confpass) {
             $sql = "INSERT INTO user (nom, email, motdepasse) VALUES (:nom, :email, :motdepasse)";
             $stat = $conn->prepare($sql);
